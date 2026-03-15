@@ -90,3 +90,4 @@ speech:
         use_speaker_boost: true
   speechTab:
     automaticPlayback: false
+
