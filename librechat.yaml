@@ -27,13 +27,13 @@ endpoints:
 
 # 3. INTERFACE: Clean and minimal to avoid conflicts
 interface:
-  endpointsMenu: true
+  endpointsMenu: false
   parameters: true
   presets: false
   sidePanel: true
   bookmarks: true
   multiConvo: true
-  modelSelect: true
+  modelSelect: false
   agents:
     use: true
     create: true
