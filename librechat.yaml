@@ -20,7 +20,7 @@ endpoints:
 
 # 3. INTERFACE: Clean and minimal to avoid conflicts
 interface:
-  endpointsMenu: false
+  endpointsMenu: true
   parameters: true
   presets: false
   sidePanel: true
