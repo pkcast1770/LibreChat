@@ -7,6 +7,8 @@ balance:
 # 2. PERMISSIONS
 endpoints:
   openAI:
+    addParams:
+      store: true
     models:
       default:
         - "gpt-4o"
