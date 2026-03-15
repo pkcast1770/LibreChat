@@ -18,7 +18,10 @@ endpoints:
 
 # 3. INTERFACE: Clean and minimal to avoid conflicts
 interface:
-  endpointsMenu: true
+  endpointsMenu: false
+  modelSelect: false
+  parameters: false
+  presets: false
   sidePanel: true
   bookmarks: true
   multiConvo: true
@@ -26,14 +29,11 @@ interface:
     use: true
     create: true
 
-# 4. MODEL SPECS: The "Stability" configuration
 modelSpecs:
   enforce: true
   prioritize: true
-  # Add this line below to tell the UI that Agents are a valid "Home"
-  addedEndpoints:
-    - "agents"
   list:
+
     - name: "gpt-4o-latest"
       label: "GPT-4o (Latest)"
       preset:
@@ -42,6 +42,13 @@ modelSpecs:
         additional_params:
           store: true
 
+    - name: "monster-agent"
+      label: "Monster Persona (Agent)"
+      preset:
+        endpoint: "agents"
+        # REPLACE THIS with the actual ID from your Agent settings in the UI
+        agent_id: "ded38a22-6197-45eb-ae92-ec6145f28b84"
+        
     - name: "gpt-4o-aug-snapshot"
       label: "GPT-4o (Aug 2024 Snapshot)"
       preset:
