@@ -41,7 +41,12 @@ modelSpecs:
         model: "gpt-4o-2024-05-13"
         additional_params:
           store: true
-        
+
+interface:
+  modelSelect: true
+  parameters: true
+  presets: true
+  
 # Cache settings: Set to true to enable caching
 cache: true
 
