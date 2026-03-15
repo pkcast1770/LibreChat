@@ -37,10 +37,11 @@ modelSpecs:
   list:
     - name: "gpt-4o-latest"
       label: "GPT-4o (Latest)"
+      capabilities: ["responses"]
       preset:
         endpoint: "openAI"
         model: "gpt-4o"
-        additional_params:
+        addParams:
           store: true
 
     - name: "monster-agent"
@@ -51,18 +52,20 @@ modelSpecs:
         
     - name: "gpt-4o-aug-snapshot"
       label: "GPT-4o (Aug 2024 Snapshot)"
+      capabilities: ["responses"]
       preset:
         endpoint: "openAI"
         model: "gpt-4o-2024-08-06"
-        additional_params:
+        addParams:
           store: true
 
     - name: "gpt-4o-may-snapshot"
       label: "GPT-4o (May Snapshot)"
+      capabilities: ["responses"]
       preset:
         endpoint: "openAI"
         model: "gpt-4o-2024-05-13"
-        additional_params:
+        addParams:
           store: true
 
 # 5. SPEECH: Unified and safe
