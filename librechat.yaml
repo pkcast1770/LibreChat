@@ -17,6 +17,13 @@ endpoints:
         - "gpt-4o-mini"
       fetch: false
     titleModel: "gpt-4o-mini"
+  agents:
+    recursionLimit: 50
+    capabilities:
+      - "file_search"
+      - "context"
+    maxCitations: 20
+    minRelevanceScore: 0.1
 
 # 3. INTERFACE: Clean and minimal to avoid conflicts
 interface:
