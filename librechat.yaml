@@ -1,6 +1,10 @@
 version: 1.1.5
 
-# 1. PERMISSIONS: This stops the "Model not available" error
+# 1. BALANCE: This replaces the deprecated CHECK_BALANCE variable
+balance:
+  enabled: false # Set to true if you want to track your own token credits
+
+# 2. PERMISSIONS
 endpoints:
   openAI:
     models:
@@ -12,22 +16,20 @@ endpoints:
       fetch: false
     titleModel: "gpt-4o-mini"
 
-# 2. UI SETTINGS: This adds the gear icon back and sets the Responses API
+# 3. INTERFACE: Clean and minimal to avoid conflicts
 interface:
   sidePanel: true
   bookmarks: true
   multiConvo: true
-  modelSelect: false
-  parameters: false
-  presets: false
+  # We leave the others out so modelSpecs can take over
   agents:
     use: true
     create: true
-    
-# 3. CUSTOM DROPDOWN: This creates your nice snapshot labels
+
+# 4. MODEL SPECS: The most important part
 modelSpecs:
   enforce: true
-  prioritize: false
+  prioritize: true # THIS FIXES THE BLINKING DOT
   list:
     - name: "gpt-4o-latest"
       label: "GPT-4o (Latest)"
@@ -35,7 +37,7 @@ modelSpecs:
         endpoint: "openAI"
         model: "gpt-4o"
         additional_params:
-          store: true # This activates Responses API features
+          store: true
 
     - name: "gpt-4o-aug-snapshot"
       label: "GPT-4o (Aug 2024 Snapshot)"
@@ -53,7 +55,7 @@ modelSpecs:
         additional_params:
           store: true
 
-# 4. SPEECH: This fixes ElevenLabs and sets manual playback
+# 5. SPEECH: Unified and safe
 speech:
   tts:
     elevenlabs:
@@ -62,7 +64,9 @@ speech:
       voices:
         - 'BkC7XItiZYxZjAc84fj2'
       voice_settings:
-        stability: 0.3        # Range: 0.0 to 1.0
-        similarity_boost: 0.75 # Range: 0.0 to 1.0
-        style: 0.0            # Range: 0.0 to 1.0 (Style Exaggeration)
-        use_speaker_boost: true # true or false
+        stability: 0.3
+        similarity_boost: 0.75
+        style: 0.0
+        use_speaker_boost: true
+  speechTab:
+    automaticPlayback: false
