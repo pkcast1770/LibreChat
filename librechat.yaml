@@ -164,13 +164,13 @@ registration:
 # Note: If balance.enabled is true, transactions will always be enabled
 # regardless of this setting to ensure balance tracking works correctly
 
-# speech:
-#   tts:
-#     elevenlabs:
-#       apiKey: '${ELEVENLABS_API_KEY}'
-#       model: 'eleven_v3'   
-#       voices:
-#        - 'BkC7XItiZYxZjAc84fj2'
+speech:
+  tts:
+    elevenlabs:
+      apiKey: "${ELEVENLABS_API_KEY}"
+      model: "eleven_v3"
+      voices:
+        - "BkC7XItiZYxZjAc84fj2"
 #   stt:
 #     openai:
 #       url: ''
