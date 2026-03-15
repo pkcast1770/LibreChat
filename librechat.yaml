@@ -25,7 +25,8 @@ interface:
   sidePanel: true
   bookmarks: true
   multiConvo: true
-  agents:
+  modelSelect: true
+  agents: true
     use: true
     create: true
 
@@ -33,7 +34,6 @@ modelSpecs:
   enforce: true
   prioritize: true
   list:
-
     - name: "gpt-4o-latest"
       label: "GPT-4o (Latest)"
       preset:
@@ -43,11 +43,10 @@ modelSpecs:
           store: true
 
     - name: "monster-agent"
-      label: "Monster Persona (Agent)"
+      label: "Monster Persona (Active)"
       preset:
         endpoint: "agents"
-        # REPLACE THIS with the actual ID from your Agent settings in the UI
-        agent_id: "ded38a22-6197-45eb-ae92-ec6145f28b84"
+        agent_id: "agent_YT2zkER5FFV9f0seCGNzK" # Use your real ID here
         
     - name: "gpt-4o-aug-snapshot"
       label: "GPT-4o (Aug 2024 Snapshot)"
