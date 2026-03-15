@@ -214,6 +214,9 @@ speech:
       model: 'eleven_v3'
       voices:
         - 'BkC7XItiZYxZjAc84fj2'
+  speechTab:
+    automaticPlayback: false
+    
 #   stt:
 #     openai:
 #       url: ''
