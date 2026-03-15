@@ -4,6 +4,41 @@
 # Configuration version (required)
 version: 1.1.5
 
+modelSpecs:
+  enforce: true # This makes these the only options in your dropdown
+  list:
+    - name: "gpt-4o-latest"
+      label: "GPT-4o (Latest)"
+      description: "OpenAI's most current GPT-4o version"
+      preset:
+        endpoint: "openAI"
+        model: "gpt-4o"
+        resendFiles: true # High-speed file handling
+        # This part ensures Responses API features are active
+        additional_params:
+          store: true 
+
+    - name: "gpt-4o-2024-08-06"
+      label: "GPT-4o (Aug 2024 Snapshot)"
+      description: "The 'Golden' snapshot known for speed and reliability"
+      preset:
+        endpoint: "openAI"
+        model: "gpt-4o-2024-08-06"
+
+    - name: "gpt-4o-2024-05-13"
+      label: "GPT-4o (Original May Release)"
+      description: "The original launch version of 4o"
+      preset:
+        endpoint: "openAI"
+        model: "gpt-4o-2024-05-13"
+
+    - name: "gpt-4o-mini"
+      label: "GPT-4o Mini"
+      description: "Fast, cheap, and great for simple tasks"
+      preset:
+        endpoint: "openAI"
+        model: "gpt-4o-mini"
+        
 # Cache settings: Set to true to enable caching
 cache: true
 
