@@ -27,7 +27,7 @@ interface:
   bookmarks: true
   multiConvo: true
   modelSelect: true
-  agents: true
+  agents:
     use: true
     create: true
 
