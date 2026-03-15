@@ -171,8 +171,6 @@ registration:
 #       model: 'eleven_v3'   
 #       voices:
 #        - 'BkC7XItiZYxZjAc84fj2'
-
-#
 #   stt:
 #     openai:
 #       url: ''
