@@ -18,7 +18,7 @@ interface:
   modelSelect: true
   parameters: true
   sidePanel: true
-  presets: true
+  presets: false
   prompts:
     use: true
     create: true
@@ -31,6 +31,7 @@ interface:
 # 3. CUSTOM DROPDOWN: This creates your nice snapshot labels
 modelSpecs:
   enforce: true
+  prioritize: false
   list:
     - name: "gpt-4o-latest"
       label: "GPT-4o (Latest)"
