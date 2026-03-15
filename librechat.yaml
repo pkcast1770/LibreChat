@@ -20,7 +20,7 @@ endpoints:
 interface:
   endpointsMenu: false
   modelSelect: false
-  parameters: false
+  parameters: true
   presets: false
   sidePanel: true
   bookmarks: true
