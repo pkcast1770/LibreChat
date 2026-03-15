@@ -210,10 +210,10 @@ registration:
 speech:
   tts:
     elevenlabs:
-      apiKey: "${ELEVENLABS_API_KEY}"
-      model: "eleven_v3"
+      apiKey: '${ELEVENLABS_API_KEY}'
+      model: 'eleven_v3'
       voices:
-        - "BkC7XItiZYxZjAc84fj2"
+        - 'BkC7XItiZYxZjAc84fj2'
 #   stt:
 #     openai:
 #       url: ''
