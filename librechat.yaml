@@ -14,20 +14,16 @@ endpoints:
 
 # 2. UI SETTINGS: This adds the gear icon back and sets the Responses API
 interface:
-  endpointsMenu: true
-  modelSelect: true
-  parameters: true
   sidePanel: true
+  bookmarks: true
+  multiConvo: true
+  modelSelect: false
+  parameters: false
   presets: false
-  prompts:
-    use: true
-    create: true
   agents:
     use: true
     create: true
-  bookmarks: true
-  multiConvo: true
-
+    
 # 3. CUSTOM DROPDOWN: This creates your nice snapshot labels
 modelSpecs:
   enforce: true
