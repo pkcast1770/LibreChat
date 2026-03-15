@@ -64,6 +64,8 @@ speech:
       model: 'eleven_v3'
       voices:
         - 'BkC7XItiZYxZjAc84fj2'
-  speechTab:
-    automaticPlayback: false
-    
+      voice_settings:
+        stability: 0.3        # Range: 0.0 to 1.0
+        similarity_boost: 0.75 # Range: 0.0 to 1.0
+        style: 0.0            # Range: 0.0 to 1.0 (Style Exaggeration)
+        use_speaker_boost: true # true or false
