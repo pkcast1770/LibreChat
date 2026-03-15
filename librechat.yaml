@@ -6,7 +6,6 @@ version: 1.1.5
 
 endpoints:
   openAI:
-    # This ensures the UI only shows what you want and doesn't "ask" the API for a list
     models:
       default:
         - "gpt-4o"
@@ -15,6 +14,33 @@ endpoints:
         - "gpt-4o-mini"
       fetch: false 
     titleModel: "gpt-4o-mini"
+    
+modelSpecs:
+  enforce: true
+  list:
+    - name: "gpt-4o-latest"
+      label: "GPT-4o (Latest)"
+      preset:
+        endpoint: "openAI"
+        model: "gpt-4o"
+        additional_params:
+          store: true 
+          
+    - name: "gpt-4o-2024-08-06"
+      label: "GPT-4o (Aug 2024 Snapshot)"
+      preset:
+        endpoint: "openAI"
+        model: "gpt-4o-2024-08-06"
+        additional_params:
+          store: true
+          
+    - name: "gpt-4o-2024-05-13"
+      label: "GPT-4o (Original May Release)"
+      preset:
+        endpoint: "openAI"
+        model: "gpt-4o-2024-05-13"
+        additional_params:
+          store: true
         
 # Cache settings: Set to true to enable caching
 cache: true
