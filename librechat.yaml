@@ -24,7 +24,7 @@ endpoints:
     capabilities:
       - "file_search"
       - "context"
-    maxContextTokens: 8000
+    maxContextTokens: 16000
     maxCitations: 40
     minRelevanceScore: 0.0
 
