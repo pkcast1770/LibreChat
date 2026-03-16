@@ -21,6 +21,7 @@ endpoints:
     titleModel: "gpt-4o-mini"
   agents:
     recursionLimit: 50
+    resendFiles: true
     capabilities:
       - "file_search"
       - "context"
