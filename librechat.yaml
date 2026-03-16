@@ -24,7 +24,8 @@ endpoints:
     capabilities:
       - "file_search"
       - "context"
-    maxCitations: 20
+    maxContextTokens: 8000
+    maxCitations: 40
     minRelevanceScore: 0.0
 
 # 3. INTERFACE: Clean and minimal to avoid conflicts
